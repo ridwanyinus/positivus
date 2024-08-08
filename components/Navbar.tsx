@@ -37,7 +37,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href={items.link}
-                  className="text-black  transition-all hover:border-b border-green text-sm xl:text-[0.938rem] tracking-[-0.1px] font-bold leading-normal text-right ${
+                  className="text-black  transition-all hover:border-b border-green text-sm xl:text-[0.938rem] tracking-[-0.1px]  leading-normal text-right ${
                     ">
                   {items.name}
                 </Link>

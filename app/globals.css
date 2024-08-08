@@ -8,8 +8,14 @@ body {
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: Space;
 }
 
+@font-face {
+  font-family: "Space";
+  src: url("../public/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+}
 
 .scale-up-hor-right {
   -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -44,7 +50,6 @@ body {
     transform-origin: 100% 100%;
   }
 }
-
 
 .tf__scroll_btn {
   animation: scroll_amini linear 2s infinite alternate;
