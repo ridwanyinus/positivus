@@ -38,11 +38,11 @@ const Navbar = () => {
               <li>
                 <Link
                   href={items.link}
-                  className="text-black  transition-all hover:border-b border-green text-sm xl:text-[0.938rem] largesceen:text-xl  leading-normal text-right font-normal
+                  className="text-black  transition-all hover:font-medium hover:border-b border-green text-sm xl:text-[0.938rem] largesceen:text-xl  leading-normal text-right font-normal
                     ">
                   {items.name}
                 </Link>
-              </li>
+              </li> 
             </ul>
           ))}
 
