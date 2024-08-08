@@ -5,6 +5,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import Link from "next/link";
 import { navItems } from "@/data/data";
 import Image from "next/image";
+import Logo from "@/public/logo.svg";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
     <nav className={` pt-6 px-5 lg:px-[1.9rem] xl:px-10 desktop:px-12 fourk:px-60  w-full relative z-[999]  `}>
       <section className="flex justify-between items-center">
         <Link href="/" className="relative z-[999]">
-          {/* <Image src={Logo} alt="logo" /> */}
+          <Image src={Logo} alt="logo" />
         </Link>
 
         <div className="flex space-x-8 xl:space-x-12 items-center max-lg:hidden">
