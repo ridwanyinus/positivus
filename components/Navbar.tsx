@@ -46,7 +46,7 @@ const Navbar = () => {
             </ul>
           ))}
 
-          <Link href="/" className="border border-dark transition-colors py-2 xl:py-3 px-4 xl:px-6 largesceen:px-8 text-sm xl:text-[0.938rem] largesceen:text-xl text-black rounded-xl ">
+          <Link href="/" className="border border-dark transition-colors py-2 xl:py-3 px-4 xl:px-6 largesceen:px-8 text-sm xl:text-[0.938rem] largesceen:text-xl text-black rounded-xl hover:bg-green ">
             Request a quote
           </Link>
         </div>
