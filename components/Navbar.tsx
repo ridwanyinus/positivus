@@ -5,7 +5,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import Link from "next/link";
 import { navItems } from "@/data/data";
 import Image from "next/image";
-import Logo from "@/public/Logo.png";
+import Logo from "@/public/logo.svg";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -26,10 +26,10 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className={` pt-6 px-5 md:px-8 lg:px-10 xl:px-20 desktop:px-28 2xl:px-48 largesceen:px-60 fourk:px-[30rem] w-full relative z-[999]  `}>
+    <nav className={`pt-6 padding-x w-full relative z-[999] overflow-hidden`}>
       <section className="flex justify-between items-center">
         <Link href="/" className="relative z-[999]">
-          <Image src={Logo} alt="logo" className="w-44  largesceen:w-auto" />
+          <Image src={Logo} alt="logo" className="w-36 sm:w-44  largesceen:w-auto" />
         </Link>
 
         <div className="flex space-x-8 xl:space-x-12 items-center max-lg:hidden">
@@ -42,6 +42,7 @@ const Navbar = () => {
                     ">
                   {items.name}
                 </Link>
+                <p className="text-black">{items.img}</p>{" "}
               </li>
             </ul>
           ))}
@@ -62,7 +63,7 @@ const Navbar = () => {
 
           {toggleMenu && (
             <div className="fixed top-0 right-0 w-[60%] sm:w-1/2 h-screen  overflow-hidden ">
-              <div className="flex flex-col justify-start bg-green items-start w-full h-full pt-28 pl-4 sm:pl-0 sm:px-12 md:px-20 transition-transform transform scale-up-hor-right">
+              <div className="flex flex-col justify-start bg-green items-start w-full h-full pt-28 max-sm:pl-4  sm:px-12 md:px-20 transition-transform transform scale-up-hor-right">
                 {navItems.map((item, idx) => (
                   <ul key={idx} className="mb-4">
                     <li className="py-1">
