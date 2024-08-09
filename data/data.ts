@@ -18,6 +18,8 @@ export const navItems: NavItem[] = [
   { name: "Blog", link: "/#footer" },
 ];
 
+export const companies = [{ img: assets.amazon }, { img: assets.dribble }, { img: assets.hubspot }, { img: assets.notion }, { img: assets.netflix }, { img: assets.zoom }];
+
 export const footer = [
   {
     title: "Company",
