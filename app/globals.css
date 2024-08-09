@@ -2,13 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+@layer utilities {
+  .padding-x {
+    @apply px-5 md:px-8 lg:px-10 xl:px-16 desktop:px-20 2xl:px-24 largesceen:px-52 fourk:px-[30rem];
+  }
+}
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
   font-family: Space;
+  scroll-behavior: smooth;
 }
 
 @font-face {

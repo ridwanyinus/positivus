@@ -26,7 +26,7 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className={` pt-6 px-5 md:px-8 lg:px-10 xl:px-20 desktop:px-28 2xl:px-48 largesceen:px-60 fourk:px-[30rem] w-full relative z-[999]  `}>
+    <nav className={`pt-6 padding-x w-full relative z-[999]`}>
       <section className="flex justify-between items-center">
         <Link href="/" className="relative z-[999]">
           <Image src={Logo} alt="logo" className="w-44  largesceen:w-auto" />
