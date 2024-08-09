@@ -5,7 +5,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import Link from "next/link";
 import { navItems } from "@/data/data";
 import Image from "next/image";
-import Logo from "@/public/Logo.png";
+import Logo from "@/public/logo.svg";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -42,6 +42,7 @@ const Navbar = () => {
                     ">
                   {items.name}
                 </Link>
+                <p className="text-black">{items.img}</p>{" "}
               </li>
             </ul>
           ))}
