@@ -26,7 +26,7 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className={`pt-6 padding-x w-full relative z-[999] overflow-hidden`}>
+    <nav className={`pt-6 padding-x w-full relative  overflow-hidden`}>
       <section className="flex justify-between items-center">
         <Link href="/" className="relative z-[999]">
           <Image src={Logo} alt="logo" className="w-36 sm:w-44  largesceen:w-auto" />
