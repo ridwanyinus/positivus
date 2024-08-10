@@ -93,3 +93,7 @@
   animation: scroll_amini linear 2s infinite alternate;
   -webkit-animation: scroll_amini linear 2s infinite alternate;
 }
+
+.card-shadow {
+  box-shadow: 0px 5px 0px 0px #191a23;
+}
