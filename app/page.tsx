@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Companies from "@/components/Companies";
 import Services from "@/components/Services";
+import Cta from "@/components/Cta";
 export default function Home() {
   return (
     <main className="bg-white">
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Companies />
       <Services />
+      <Cta />
     </main>
   );
 }
