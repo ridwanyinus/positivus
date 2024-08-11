@@ -19,8 +19,8 @@ const Services = () => {
             className={`w-72 xs:w-80 small:w-[23rem] sm:w-[27rem] xl:w-[32rem] desktop:w-[35rem] largesceen:w-[37.5rem]  sm:h-[14rem] xl:h-[18.125rem] flex justify-between items-center border border-dark rounded-[1.5rem] xs:rounded-[2rem] small:rounded-[2.813rem] card-shadow p-5 xs:p-8 sm:p-8 desktop:p-10 `}>
             <div className="flex flex-col justify-between gap-y-10 small:gap-y-16 ">
               <div>
-                <h3 className={`${items.headingBg} label font-medium text-lg xs:text-xl sm:text-2xl xl:text-3xl `}>{items.heading}</h3>
-                <h3 className={`${items.headingBg} label font-medium text-lg xs:text-xl sm:text-2xl xl:text-3xl`}>{items.heading2}</h3>
+                <h3 className={`${items.headingBg} label font-medium h3 `}>{items.heading}</h3>
+                <h3 className={`${items.headingBg} label font-medium h3`}>{items.heading2}</h3>
               </div>
               <Link href="/" className="flex gap-x-2  items-center">
                 <p className={`text-sm sm:text-base lg:text-lg 2xl:text-xl font-normal leading-[140%] ${items.textBg}`}>{items.learn}</p>
