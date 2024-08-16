@@ -14,5 +14,37 @@ import analytic from "@/public/tokyo-volumetric-analytics-of-different-types-in-
 import cta from "@/public/cta.png";
 import plus from "@/public/Plusicon.svg";
 import minus from "@/public/Minusicon.svg";
+import team1 from "@/public/team1.png";
+import team2 from "@/public/team3.png";
+import team3 from "@/public/team2.png";
+import team4 from "@/public/team4.png";
+import team5 from "@/public/team5.png";
+import team6 from "@/public/team6.png";
+import teamLinkedIn from "@/public/linkedinicon.svg";
+
 // eslint-disable-next-line import/no-anonymous-default-export
-export default { hero, amazon, dribble, hubspot, notion, netflix, zoom, searchEngine, payPClick, socialMedia, mail, content, analytic, cta, plus, minus };
+export default {
+  hero,
+  amazon,
+  dribble,
+  hubspot,
+  notion,
+  netflix,
+  zoom,
+  searchEngine,
+  payPClick,
+  socialMedia,
+  mail,
+  content,
+  analytic,
+  cta,
+  plus,
+  minus,
+  team1,
+  team2,
+  team3,
+  team4,
+  team5,
+  team6,
+  teamLinkedIn,
+};
