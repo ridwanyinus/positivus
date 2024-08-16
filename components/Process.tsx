@@ -10,7 +10,7 @@ const Process = () => {
         <p className="heading-sm w-[16rem]">Step-by-Step Guide to Achieving Your Business Goals</p>
       </div>
 
-      <section className="pt-20 grid place-items-center gap-y-6 sm:gap-y-10">
+      <section className="mt-8 sm:mt-12 lg:pt-20 grid place-items-center gap-y-6 sm:gap-y-10">
         {process.map((items, idx: number) => (
           <div
             key={idx}
