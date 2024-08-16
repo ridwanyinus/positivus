@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import assets from "@/public/assets";
 import { StaticImageData } from "next/image";
+
 export type NavItem = {
   name: string;
   link: string;
@@ -46,11 +47,13 @@ export const caseStudies = [
     learn: "Learn more",
   },
   {
+    line: "bg-white",
     text: "For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.",
 
     learn: "Learn more",
   },
   {
+    line: "bg-white",
     text: "For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.",
 
     learn: "Learn more",
