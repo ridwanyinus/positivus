@@ -12,7 +12,7 @@
   }
 
   .heading-sm {
-    @apply text-[0.688rem] small:text-xs md:text-sm xl:text-base 2xl:text-lg text-black xs:w-[22rem] sm:w-[30rem] xl:w-[36.25rem] mt-3 small:mt-0;
+    @apply text-[0.688rem] small:text-xs md:text-sm xl:text-base 2xl:text-lg text-black  sm:w-[30rem] xl:w-[36.25rem] mt-3 small:mt-0;
   }
 
   .label {
@@ -25,6 +25,10 @@
 
   .button {
     @apply transition-colors py-3 xl:py-5 px-4 xl:px-8 largesceen:px-8 text-sm xl:text-[0.938rem] largesceen:text-xl text-white text-center rounded-md desktop:rounded-xl bg-dark hover:bg-black;
+  }
+
+  .p {
+    @apply text-[0.688rem] small:text-xs md:text-sm xl:text-base 2xl:text-lg;
   }
 }
 

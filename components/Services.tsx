@@ -8,7 +8,7 @@ const Services = () => {
     <main className="padding-x pt-10 lg:pt-20 pb-10">
       <div className="flex flex-col small:flex-row gap-x-5 small:gap-x-8 sm:gap-x-10 items-center">
         <h2 className="heading label">Services</h2>
-        <p className="heading-sm ">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+        <p className="heading-sm w-[80%]">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
       </div>
 
       <section className="grid lg:grid-cols-2  place-items-center mt-12 sm:mt-16 gap-y-8 small:gap-y-10 desktop:gap-10">
