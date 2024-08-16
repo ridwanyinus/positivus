@@ -14,7 +14,7 @@ const Process = () => {
         {process.map((items, idx: number) => (
           <div
             key={idx}
-            className="bg-gray border border-dark card-shadow w-full small:w-[90%] 2xl:w-[80%] rounded-3xl 2xl:rounded-[2rem] min-h-20 px-4 sm:px-8 md:px-12 lg:px-20 py-4 sm:py-6 2xl:py-5 largesceen:py-8">
+            className="bg-gray border border-dark card-shadow w-full small:w-[90%] 2xl:w-[80%] rounded-2xl sm:rounded-3xl 2xl:rounded-[2rem] min-h-20 px-4 sm:px-8 md:px-12 lg:px-20 py-4 sm:py-6 2xl:py-5 largesceen:py-8">
             <details className="group [&_summary::-webkit-details-marker]:hidden ">
               <summary className="flex justify-between items-center">
                 <div className="flex justify-center items-center gap-x-1 small:gap-x-2 sm:gap-x-4 md:gap-x-4 lg:gap-x-6">
