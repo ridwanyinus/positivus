@@ -5,13 +5,13 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 const CaseStudies = () => {
   return (
-    <main className="padding-x pt-16 lg:pt-28 desktop:pt-36">
+    <main className="padding-x pt-8 md:pt-16 lg:pt-28 desktop:pt-36">
       <div className="flex flex-col small:flex-row gap-x-5 small:gap-x-8 sm:gap-x-10 items-center">
         <h2 className="heading label">Case Studies</h2>
         <p className="heading-sm w-[16rem]">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
       </div>
 
-      <section className="mt-12 lg:mt-20  lg:rounded-[2.813rem] gap-x-4 lg:gap-x-0 lg:bg-dark grid sm:grid-cols-3 place-items-center lg:p-6 lg:py-10 xl:py-12 space-y-6 sm:space-y-0">
+      <section className="mt-8 md:mt-12 lg:mt-20  lg:rounded-[2.813rem] gap-x-4 lg:gap-x-0 lg:bg-dark grid sm:grid-cols-3 place-items-center lg:p-6 lg:py-10 xl:py-12 space-y-6 sm:space-y-0">
         {caseStudies.map((items, idx: number) => (
           <div key={idx} className="flex flex-col justify-between relative  items-start h-[10.5rem] md:h-[12.5rem] lg:h-full w-fit sm:w-full bg-dark rounded-xl lg:rounded-none p-4  lg:p-0">
             <div className="flex items-center justify-start h-full w-full ">
