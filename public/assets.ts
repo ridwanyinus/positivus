@@ -12,5 +12,7 @@ import mail from "@/public/tokyo-sending-messages-from-one-place-to-another 1.pn
 import content from "@/public/tokyo-many-browser-windows-with-different-information 1.png";
 import analytic from "@/public/tokyo-volumetric-analytics-of-different-types-in-web-browsers 2.png";
 import cta from "@/public/cta.png";
+import plus from "@/public/Plusicon.svg";
+import minus from "@/public/Minusicon.svg";
 // eslint-disable-next-line import/no-anonymous-default-export
-export default { hero, amazon, dribble, hubspot, notion, netflix, zoom, searchEngine, payPClick, socialMedia, mail, content, analytic, cta };
+export default { hero, amazon, dribble, hubspot, notion, netflix, zoom, searchEngine, payPClick, socialMedia, mail, content, analytic, cta, plus, minus };
