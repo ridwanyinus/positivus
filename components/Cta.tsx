@@ -4,7 +4,7 @@ import assets from "@/public/assets";
 import Image from "next/image";
 const Cta = () => {
   return (
-    <main className="padding-x  md:mt-16 lg:pt-28 ">
+    <main className="padding-x md:pt-16 lg:pt-28 ">
       <section className="rounded-3xl  md:rounded-[2.813rem] bg-gray grid lg:grid-cols-2 place-items-center relative max-xs:p-6 py-10 xl:py-16">
         <div>
           <h3 className="h3">Let’s make things happen</h3>
