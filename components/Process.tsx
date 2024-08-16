@@ -29,7 +29,6 @@ const Process = () => {
               </summary>
 
               <div className="">
-                <div className={`w-full h-[1px] bg-dark my-5 lg:my-6 xl:my-10 desktop:my-12`}></div>
 
                 <p className="p rounded-lg bg-green p-4 ">{items.text}</p>
               </div>
