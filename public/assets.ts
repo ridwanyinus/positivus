@@ -21,6 +21,7 @@ import team4 from "@/public/team4.png";
 import team5 from "@/public/team5.png";
 import team6 from "@/public/team6.png";
 import teamLinkedIn from "@/public/linkedinicon.svg";
+import bubble from "@/public/Bubble.png";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -47,4 +48,5 @@ export default {
   team5,
   team6,
   teamLinkedIn,
+  bubble,
 };

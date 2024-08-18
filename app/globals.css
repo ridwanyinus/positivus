@@ -109,3 +109,27 @@
 .card-shadow {
   box-shadow: 0px 5px 0px 0px #191a23;
 }
+
+.swiper-slide {
+  transition: flex 0.3s ease-in-out;
+}
+
+/* .swiper-slide-active {
+  flex: 1;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  flex: 0.5;
+} */
+
+@media (min-width: 640px) {
+  .swiper-slide-active {
+    flex: 2;
+  }
+
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    flex: 1;
+  }
+}
