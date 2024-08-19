@@ -5,7 +5,7 @@ import MySwiper from "./ui/Swiper";
 
 const Testimonials = () => {
   return (
-    <main className="padding-x pt-16 lg:pt-28 desktop:pt-36 flex flex-col justify-center  w-full pb-20 overflow-hidden">
+    <main className="padding-x pt-16 lg:pt-28 desktop:pt-36 flex flex-col justify-center  w-full overflow-hidden">
       <div className="flex flex-col small:flex-row gap-x-5 small:gap-x-8 sm:gap-x-10 items-center">
         <h2 className="heading label">Testimonials</h2>
         <p className="heading-sm w-[16rem]">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>

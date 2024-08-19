@@ -22,7 +22,7 @@ import team5 from "@/public/team5.png";
 import team6 from "@/public/team6.png";
 import teamLinkedIn from "@/public/linkedinicon.svg";
 import bubble from "@/public/Bubble.png";
-
+import contactIllustration from "@/public/contactIllustration.png";
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   hero,
@@ -49,4 +49,5 @@ export default {
   team6,
   teamLinkedIn,
   bubble,
+  contactIllustration,
 };
