@@ -1,4 +1,3 @@
-import { logo } from "@/";
 import hero from "@/public/hero-Illustration.png";
 import amazon from "@/public/amazonlogo.svg";
 import dribble from "@/public/dribble logo.svg";
