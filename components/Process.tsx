@@ -28,8 +28,7 @@ const Process = () => {
                 </span>
               </summary>
 
-              <div className="">
-
+              <div className="mt-6">
                 <p className="p rounded-lg bg-green p-4 ">{items.text}</p>
               </div>
             </details>
