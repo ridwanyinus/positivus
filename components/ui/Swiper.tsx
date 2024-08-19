@@ -165,7 +165,7 @@ const MySwiper: React.FC = () => {
 
       <div className="custom-navigation flex gap-x-12 xs:gap-x-16 small:gap-x-20 sm:gap-x-28 lg:gap-x-36 largesceen:gap-x-44 justify-center items-center mt-8 small:mt-10 sm:mt-16 md:mt-20 xl:mt-24 desktop:mt-28">
         <button onClick={slidePrev} className="navigation-button">
-          <ArrowUpFromDot className="text-white -rotate-90 font-bold w-4 sm:w-5 lg:w-full" strokeWidth={3} />
+          <ArrowUpFromDot className="text-white active:text-green -rotate-90 font-bold w-4 sm:w-5 lg:w-full" strokeWidth={3} />
         </button>
 
         <div className="flex gap-x-3">
@@ -187,7 +187,7 @@ const MySwiper: React.FC = () => {
         </div>
 
         <button onClick={slideNext} className="navigation-button">
-          <ArrowUpFromDot className="text-white rotate-90 w-4 sm:w-5 lg:w-full" strokeWidth={3} />
+          <ArrowUpFromDot className="text-white active:text-green rotate-90 w-4 sm:w-5 lg:w-full" strokeWidth={3} />
         </button>
       </div>
     </div>
