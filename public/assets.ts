@@ -1,3 +1,4 @@
+import { logo } from "@/";
 import hero from "@/public/hero-Illustration.png";
 import amazon from "@/public/amazonlogo.svg";
 import dribble from "@/public/dribble logo.svg";
@@ -23,6 +24,8 @@ import team6 from "@/public/team6.png";
 import teamLinkedIn from "@/public/linkedinicon.svg";
 import bubble from "@/public/Bubble.png";
 import contactIllustration from "@/public/contactIllustration.png";
+import footerLogo from "@/public/fLogo.png";
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   hero,
@@ -32,6 +35,7 @@ export default {
   notion,
   netflix,
   zoom,
+  footerLogo,
   searchEngine,
   payPClick,
   socialMedia,

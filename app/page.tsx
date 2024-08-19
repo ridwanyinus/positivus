@@ -9,6 +9,7 @@ import Process from "@/components/Process";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import Contacts from "@/components/Contacts";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="bg-white">
@@ -22,6 +23,7 @@ export default function Home() {
       <Team />
       <Testimonials />
       <Contacts />
+      <Footer />
     </main>
   );
 }

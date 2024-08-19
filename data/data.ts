@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import assets from "@/public/assets";
 import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
 export type NavItem = {
   name: string;
@@ -195,4 +196,4 @@ export const footer = [
   },
 ];
 
-export const social = [{ image: FaTwitter }, { image: FaFacebook }, { image: FaLinkedin }, { image: FaInstagram }];
+export const social = [{ image: FaTwitter }, { image: FaFacebook }, { image: FaLinkedin }];

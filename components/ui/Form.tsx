@@ -20,11 +20,11 @@ const Form = () => {
 
         <div>
           <label className="block text-sm xl:text-base mb-1">Name</label>
-          <input placeholder="Name" type="text" className="w-full px-4 small:px-6 py-3 small:py-4 border border-black rounded-lg lg:rounded-xl  p text-[#898989]" required />
+          <input placeholder="Name" type="text" className="w-full px-4 small:px-6 py-3 small:py-4 border border-black rounded-lg lg:rounded-xl  input-p text-[#898989]" required />
         </div>
         <div>
           <label className="block text-sm xl:text-base mb-1">Email*</label>
-          <input placeholder="Email" type="email" className="w-full px-4 small:px-6 py-3 small:py-4 border border-black rounded-lg lg:rounded-xl  p text-[#898989]" required />
+          <input placeholder="Email" type="email" className="w-full px-4 small:px-6 py-3 small:py-4 border border-black rounded-lg lg:rounded-xl input-p text-[#898989]" required />
         </div>
 
         <div>
@@ -33,7 +33,7 @@ const Form = () => {
             name="Message"
             id="Message"
             placeholder="Message"
-            className=" px-4 small:px-6 py-2 border border-black rounded-lg lg:rounded-xl p text-[#898989] min-h-36 lg:min-h-44 w-full  small:w-[22rem] md:w-[25rem] xl:w-[30rem] desktop:w-[34.75rem]"
+            className=" px-4 small:px-6 py-2 border border-black rounded-lg lg:rounded-xl input-p text-[#898989] min-h-36 lg:min-h-44 w-full  small:w-[22rem] md:w-[25rem] xl:w-[30rem] desktop:w-[34.75rem]"
             required></textarea>
         </div>
 
