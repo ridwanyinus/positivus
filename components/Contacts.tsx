@@ -4,7 +4,7 @@ import assets from "@/public/assets";
 import Form from "./ui/Form";
 const Contacts = () => {
   return (
-    <main className="padding-x pt-16 lg:pt-28 desktop:pt-36 overflow-hidden">
+    <main id="contact" className="padding-x pt-16 lg:pt-28 desktop:pt-36 overflow-hidden">
       <div className="flex flex-col small:flex-row gap-x-5 small:gap-x-8 sm:gap-x-10 items-center">
         <h2 className="heading label">Contact Us</h2>
         <p className="heading-sm xl:w-80">Connect with Us: Let&apos;s Discuss Your Digital Marketing Needs</p>

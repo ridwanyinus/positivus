@@ -23,11 +23,11 @@ export type ServicesList = {
 };
 
 export const navItems: NavItem[] = [
-  { name: "About us", link: "/#about" },
-  { name: "Services", link: "/#pricing" },
-  { name: "Use Cases", link: "/#features" },
-  { name: "Pricing", link: "/#footer" },
-  { name: "Blog", link: "/#footer" },
+  { name: "About us", link: "/#hero" },
+  { name: "Services", link: "/#services" },
+  { name: "Use Cases", link: "/#case" },
+  { name: "Pricing", link: "/" },
+  { name: "Blog", link: "/#contact" },
 ];
 
 export const companies = [{ img: assets.amazon }, { img: assets.dribble }, { img: assets.hubspot }, { img: assets.notion }, { img: assets.netflix }, { img: assets.zoom }];

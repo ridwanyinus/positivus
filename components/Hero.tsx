@@ -4,7 +4,7 @@ import assets from "@/public/assets";
 import Image from "next/image";
 const Hero = () => {
   return (
-    <main className="padding-x pt-20 pb-12 flex flex-col lg:flex-row items-center justify-center lg:justify-between ">
+    <main className="padding-x pt-20 pb-12 flex flex-col lg:flex-row items-center justify-center lg:justify-between" id="hero">
       <section className="mb-12 lg:mb-0">
         <h1 className="text-black font-medium text-center small:text-start text-4xl  sm:text-5xl text-[3.2rem] leading-[1.2] xl:leading-[1.4] desktop:leading-normal desktop:text-6xl block max-small:mx-auto w-[21rem]  small:w-[23rem] sm:w-[30rem] desktop:w-[33.2rem]">
           Navigating the digital landscape for success
