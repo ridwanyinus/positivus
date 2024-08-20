@@ -69,7 +69,7 @@ const Footer = () => {
         <div className="w-full h-[1px] bg-white my-8 md:my-10 lg:my-14"></div>
         <div className="flex gap-x-12 flex-col sm:flex-row">
           <p className="p text-white text-center">
-            © 2024 Positivus. All Rights Reserved. <br className="block small:hidden" /> Designed by <Link href="https://ridwanyinus.is-a.dev/">Ridwan</Link>
+            © 2024 Positivus. All Rights Reserved. <br className="block small:hidden" /> Developed by <Link href="https://ridwanyinus.is-a.dev/">Ridwan</Link>
           </p>
           <p className="p text-white underline text-center">Privacy Policy</p>
         </div>
