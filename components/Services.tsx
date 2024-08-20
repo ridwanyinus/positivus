@@ -19,12 +19,17 @@ const Services = () => {
         <p className="heading-sm w-[80%]">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
       </div>
 
-      <section className="grid lg:grid-cols-2  place-items-center mt-12 sm:mt-16 gap-y-8 small:gap-y-10 desktop:gap-10">
+      <section className="grid lg:grid-cols-2  place-items-center mt-12 sm:mt-16 gap-y-8 small:gap-y-10 desktop:gap-10 overflow-hidden">
         {services.map((items, idx: number) => (
           <div
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-aos-offset="150"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="350"
             key={idx}
             style={{ backgroundColor: items.bg }}
-            className={`w-72 xs:w-80 small:w-[23rem] sm:w-[27rem] xl:w-[32rem] desktop:w-[35rem] largesceen:w-[37.5rem]  sm:h-[14rem] xl:h-[18.125rem] flex justify-between items-center border border-dark rounded-[1.5rem] xs:rounded-[2rem] small:rounded-[2.813rem] card-shadow p-5 xs:p-8 sm:p-8 desktop:p-10 `}>
+            className={`w-72 xs:w-80 small:w-[23rem] sm:w-[27rem] xl:w-[32rem] desktop:w-[35rem] largesceen:w-[37.5rem]  sm:h-[14rem] xl:h-[18.125rem] flex justify-between items-center border border-dark rounded-[1.5rem] xs:rounded-[2rem] small:rounded-[2.813rem] card-shadow p-5 xs:p-8 sm:p-8 desktop:p-10 max-lg:data-aos-fade-up small-screen-animation`}>
             <div className="flex flex-col justify-between gap-y-10 small:gap-y-16 ">
               <div>
                 <h3 className={`${items.headingBg} label font-medium h3 `}>{items.heading}</h3>

@@ -20,6 +20,7 @@ export type ServicesList = {
   bg: string;
   headingBg: string;
   textBg?: string;
+  aos?: string;
 };
 
 export const navItems: NavItem[] = [
