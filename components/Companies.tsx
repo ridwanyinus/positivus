@@ -1,15 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import { companies } from "@/data/data";
+import InfiniteMovingCards from "./ui/InfinityMovingCard";
 const Companies = () => {
   return (
-    <main className="padding-x pt-5 sm:pt-10 lg:pt-20 pb-10">
-      <div className="grid grid-cols-6 place-items-center">
-        {companies.map((items, idx: number) => (
-          <div key={idx}>
-            <Image src={items.img} alt={items.img} className="" />
-          </div>
-        ))}
+    <main className="padding-x py-3 sm:py-8 lg:py-10 xl:py-16 largesceen:py-20">
+      <div className="flex place-items-center">
+        <InfiniteMovingCards items={companies} />
       </div>
     </main>
   );
