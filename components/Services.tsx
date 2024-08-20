@@ -1,11 +1,19 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import Image from "next/image";
 import { services } from "@/data/data";
 import { FaLocationArrow } from "react-icons/fa6";
 import Link from "next/link";
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <main id="services" className="padding-x pt-10 lg:pt-20 pb-10">
+    <main data-aos="fade-up" data-aos-delay="0" data-aos-offset="150" data-aos-easing="ease-in-sine" data-aos-duration="350" id="services" className="padding-x pt-10 lg:pt-20 pb-10">
       <div className="flex flex-col small:flex-row gap-x-5 small:gap-x-8 sm:gap-x-10 items-center">
         <h2 className="heading label">Services</h2>
         <p className="heading-sm w-[80%]">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>

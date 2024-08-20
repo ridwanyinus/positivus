@@ -1,10 +1,18 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import { process } from "@/data/data";
 import assets from "@/public/assets";
 import Image from "next/image";
 const Process = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <main className="padding-x  pt-16 lg:pt-28 desktop:pt-36">
+    <main data-aos="fade-up" data-aos-delay="0" data-aos-offset="150" data-aos-easing="ease-in-sine" data-aos-duration="350" className="padding-x  pt-16 lg:pt-28 desktop:pt-36">
       <div className="flex flex-col small:flex-row gap-x-5 small:gap-x-8 sm:gap-x-10 items-center">
         <h2 className="heading label">Our Working Process </h2>
         <p className="heading-sm w-[16rem]">Step-by-Step Guide to Achieving Your Business Goals</p>
@@ -13,6 +21,11 @@ const Process = () => {
       <section className="mt-8 sm:mt-12 xl:mt-16 grid place-items-center gap-y-6 sm:gap-y-10">
         {process.map((items, idx: number) => (
           <div
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-aos-offset="150"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="350"
             key={idx}
             className="bg-gray border border-dark card-shadow w-full small:w-[90%] 2xl:w-[80%] rounded-2xl sm:rounded-3xl 2xl:rounded-[2rem] min-h-20 px-4 sm:px-8 md:px-12 lg:px-20 py-4 sm:py-6 2xl:py-5 largesceen:py-8">
             <details className="group [&_summary::-webkit-details-marker]:hidden ">

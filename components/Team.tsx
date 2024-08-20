@@ -1,10 +1,18 @@
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import { team } from "@/data/data";
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 const Team = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <main className="padding-x  pt-16 lg:pt-28 desktop:pt-36 ">
+    <main data-aos="fade-up" data-aos-delay="0" data-aos-offset="150" data-aos-easing="ease-in-sine" data-aos-duration="350" className="padding-x  pt-16 lg:pt-28 desktop:pt-36 ">
       <div className="flex flex-col small:flex-row gap-x-5 small:gap-x-8 sm:gap-x-10 items-center">
         <h2 className="heading label">Team</h2>
         <p className="heading-sm w-[16rem]">Meet the skilled and experienced team behind our successful digital marketing strategies</p>

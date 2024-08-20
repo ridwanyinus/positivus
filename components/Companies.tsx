@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { companies } from "@/data/data";
 import InfiniteMovingCards from "./ui/InfinityMovingCard";
 const Companies = () => {

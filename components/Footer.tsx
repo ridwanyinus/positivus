@@ -1,14 +1,20 @@
 "use client";
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
 import Link from "next/link";
 import Image from "next/image";
 import assets from "@/public/assets";
 import { navItems, social } from "@/data/data";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <footer className="padding-x pt-16 lg:pt-28 desktop:pt-36 ">
+    <footer data-aos="fade-up" data-aos-delay="0" data-aos-offset="150" data-aos-easing="ease-in-sine" data-aos-duration="350" className="padding-x pt-16 lg:pt-28 desktop:pt-36 ">
       <section className="bg-dark rounded-t-2xl sm:rounded-t-3xl 2xl:rounded-t-[2rem] min-h-80 py-8 md:py-10 lg:py-16 px-6 md:px-10 lg:px-16">
         <div className="flex justify-between items-center">
           <Link href="/">

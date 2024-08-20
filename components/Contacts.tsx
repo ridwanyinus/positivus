@@ -1,10 +1,25 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import Image from "next/image";
 import assets from "@/public/assets";
 import Form from "./ui/Form";
 const Contacts = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <main id="contact" className="padding-x pt-16 lg:pt-28 desktop:pt-36 overflow-hidden">
+    <main
+      data-aos="fade-up"
+      data-aos-delay="0"
+      data-aos-offset="150"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="350"
+      id="contact"
+      className="padding-x pt-16 lg:pt-28 desktop:pt-36 overflow-hidden">
       <div className="flex flex-col small:flex-row gap-x-5 small:gap-x-8 sm:gap-x-10 items-center">
         <h2 className="heading label">Contact Us</h2>
         <p className="heading-sm xl:w-80">Connect with Us: Let&apos;s Discuss Your Digital Marketing Needs</p>
