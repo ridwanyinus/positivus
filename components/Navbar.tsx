@@ -54,9 +54,9 @@ const Navbar = () => {
 
         {/* Mobile navbar */}
 
-        <div className="lg:hidden z-[995]">
+        <div className="lg:hidden z-[995] relative">
           {toggleMenu ? (
-            <IoClose size={30} onClick={() => setToggleMenu(false)} className="relative z-10 cursor-pointer text-dark" />
+            <IoClose size={30} onClick={() => setToggleMenu(false)} className="fixed right-8 top-6 z-10 cursor-pointer text-dark" />
           ) : (
             <FaBarsStaggered size={30} onClick={() => setToggleMenu(true)} className="svg text-dark relative z-10 cursor-pointer" />
           )}
