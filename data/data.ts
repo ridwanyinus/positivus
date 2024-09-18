@@ -1,10 +1,8 @@
 import { FaFacebook } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import assets from "@/public/assets";
 import { StaticImageData } from "next/image";
-import { IconType } from "react-icons";
 
 export type NavItem = {
   name: string;
