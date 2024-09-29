@@ -10,12 +10,13 @@ import Testimonials from '@/components/Testimonials';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 
-// todo: move all lib/sections to their own folder
-// todo: create a utils class for all reusable classes
-// todo: create a utils class for all reusable anim/gsap
-// todo: remove unused imports
+// TODO: move all lib/sections to their own folder
+// TODO: create a utils class for all reusable classes
+// TODO: create a utils class for all reusable anim/gsap
+// TODO: remove unused imports
 // TODO: create a favicon for all browsers
 // TODO: create a assets.ts and store all my images there
+// TODO: add custom not-found page
 
 export default function Home() {
   return (
