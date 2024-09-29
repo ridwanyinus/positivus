@@ -47,8 +47,8 @@
 }
 
 @font-face {
-  font-family: "Space";
-  src: url("../public/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-family: 'Space';
+  src: url('../public/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
   font-style: normal;
 }
 
@@ -135,6 +135,6 @@
   }
 
   .small-screen-animation {
-    data-aos: "fade-up";
+    data-aos: 'fade-up';
   }
 }

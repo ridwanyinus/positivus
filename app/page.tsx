@@ -14,6 +14,8 @@ import Footer from '@/components/Footer';
 // todo: create a utils class for all reusable classes
 // todo: create a utils class for all reusable anim/gsap
 // todo: remove unused imports
+// TODO: create a favicon for all browsers
+// TODO: create a assets.ts and store all my images there
 
 export default function Home() {
   return (
