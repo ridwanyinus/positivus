@@ -17,6 +17,7 @@ import Footer from '@/components/Footer';
 // TODO: create a favicon for all browsers
 // TODO: create a assets.ts and store all my images there
 // TODO: add custom not-found page
+// TODO: move all images to assets.ts files
 
 export default function Home() {
   return (
