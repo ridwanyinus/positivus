@@ -4,8 +4,10 @@ import AOS from 'aos';
 import Link from 'next/link';
 import Image from 'next/image';
 import assets from '@/public/assets';
-import { navItems, social } from '@/data/data';
+import { navItems } from '@/lib/content/navbar';
+import { social } from '@/lib/content/social';
 import { aosConfig } from '@/styles/animation/anim';
+
 const Footer = () => {
   useEffect(() => {
     AOS.init();
@@ -22,7 +24,7 @@ const Footer = () => {
             {navItems.map((items, idx: number) => (
               <ul key={`link=${idx}`}>
                 <li>
-                  <Link href={items.link} className='text-white underline transition-all hover:font-medium hover:border-b border-green p  leading-normal'>
+                  <Link href={items.link} className='text-white  transition-all hover:font-medium hover:border-b border-green p  leading-normal'>
                     {items.name}
                   </Link>
                 </li>
@@ -34,7 +36,7 @@ const Footer = () => {
             {social.map((items, idx: number) => (
               <div key={idx}>
                 <Link href='/'>
-                  <items.image className='text-white text-xl lg:text-2xl hover:text-green' />
+                  <items.icon className='text-white text-xl lg:text-2xl hover:text-green' />
                 </Link>
               </div>
             ))}
