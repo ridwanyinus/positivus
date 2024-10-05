@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { Swiper as SwiperType } from "swiper/types";
 import assets from "@/public/assets";

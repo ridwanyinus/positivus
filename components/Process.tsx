@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import { process } from '@/data/data';
+import { process } from '@/lib/content/process';
 import assets from '@/public/assets';
 import Image from 'next/image';
 import { aosConfig } from '@/styles/animation/anim';

@@ -1,10 +1,11 @@
 'use client';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import { team } from '@/data/data';
+import { team } from '@/lib/content/team';
 import Image from 'next/image';
 import Link from 'next/link';
 import { aosConfig } from '@/styles/animation/anim';
+
 const Team = () => {
   useEffect(() => {
     AOS.init();
@@ -18,7 +19,7 @@ const Team = () => {
       <section className='mt-8 sm:mt-12 xl:mt-16 grid small:grid-cols-2 md:grid-cols-3 place-items-center gap-6 small:gap-4 lg:gap-10'>
         {team.map((item, idx: number) => (
           <div
-           {...aosConfig}
+            {...aosConfig}
             key={idx}
             className='bg-gray flex flex-col justify-center border border-dark card-shadow rounded-2xl sm:rounded-3xl 2xl:rounded-[2rem] px-3 md:px-2 lg:px-4 xl:px-8 desktop:px-10 py-2 xl:py-3 2xl:py-6 largesceen:py-0 w-[80%] small:w-auto min-h-40 small:min-h-44  md:min-h-60 xl:min-h-72 desktop:min-h-[20.625rem]'>
             <div className='flex items-end gap-x-2 lg:gap-x-4'>

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { IoClose } from 'react-icons/io5';
 import { FaBarsStaggered } from 'react-icons/fa6';
 import Link from 'next/link';
-import { navItems } from '@/data/data';
+import { navItems } from '@/lib/content/navbar';
 import Image from 'next/image';
 import assets from '@/public/assets';
 const Navbar = () => {
