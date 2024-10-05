@@ -1,10 +1,11 @@
 'use client';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import { caseStudies } from '@/data/data';
+import { caseStudies } from '@/lib/content/caseStudies';
 import Link from 'next/link';
 import { FaLocationArrow } from 'react-icons/fa6';
 import { aosConfig } from '@/styles/animation/anim';
+
 const CaseStudies = () => {
   useEffect(() => {
     AOS.init();
