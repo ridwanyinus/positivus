@@ -15,6 +15,7 @@ import Footer from '@/components/Footer';
 // TODO: remove unused imports
 // TODO: create a favicon for all browsers
 // TODO: add custom not-found page
+// TODO: GETID()
 
 export default function Home() {
   return (
