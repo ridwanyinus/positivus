@@ -5,6 +5,7 @@ import { caseStudies } from '@/lib/content/caseStudies';
 import Link from 'next/link';
 import { FaLocationArrow } from 'react-icons/fa6';
 import { aosConfig } from '@/styles/animation/anim';
+import { getId } from '@/utils/helper';
 
 const CaseStudies = () => {
   useEffect(() => {
@@ -18,8 +19,8 @@ const CaseStudies = () => {
       </div>
 
       <section className='mt-8 md:mt-12 lg:mt-20  lg:rounded-[2.813rem] gap-x-4 lg:gap-x-0 lg:bg-dark grid sm:grid-cols-3 place-items-center lg:p-6 lg:py-10 xl:py-12 space-y-6 sm:space-y-0'>
-        {caseStudies.map((items, idx: number) => (
-          <div key={idx} className='flex flex-col justify-between relative  items-start h-[10.5rem] md:h-[12.5rem] lg:h-full w-fit sm:w-full bg-dark rounded-xl lg:rounded-none p-4  lg:p-0'>
+        {caseStudies.map((items) => (
+          <div key={getId()} className='flex flex-col justify-between relative  items-start h-[10.5rem] md:h-[12.5rem] lg:h-full w-fit sm:w-full bg-dark rounded-xl lg:rounded-none p-4  lg:p-0'>
             <div className='flex items-center justify-start h-full w-full '>
               <div className={`${items.line} w-[1px] h-[11.625rem] lg:mr-8 xl:mr-14 desktop:mr-16 fourk:mr-20 hidden lg:block`}></div>
               <p className='p text-white  w-[15rem] 2xl:w-[17.875rem] mb-4 xl:mb-8'>{items.text}</p>

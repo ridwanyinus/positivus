@@ -7,6 +7,7 @@ import assets from '@/public/assets';
 import { navItems } from '@/lib/content/navbar';
 import { social } from '@/lib/content/social';
 import { aosConfig } from '@/styles/animation/anim';
+import { getId } from '@/utils/helper';
 
 const Footer = () => {
   useEffect(() => {
@@ -21,8 +22,8 @@ const Footer = () => {
           </Link>
 
           <div className='flex space-x-8 xl:space-x-12 items-center max-lg:hidden'>
-            {navItems.map((items, idx: number) => (
-              <ul key={`link=${idx}`}>
+            {navItems.map((items) => (
+              <ul key={getId()}>
                 <li>
                   <Link href={items.link} className='text-white  transition-all hover:font-medium hover:border-b border-green p  leading-normal'>
                     {items.name}
@@ -33,8 +34,8 @@ const Footer = () => {
           </div>
 
           <div className='flex gap-x-3'>
-            {social.map((items, idx: number) => (
-              <div key={idx}>
+            {social.map((items) => (
+              <div key={getId()}>
                 <Link href='/'>
                   <items.icon className='text-white text-xl lg:text-2xl hover:text-green' />
                 </Link>

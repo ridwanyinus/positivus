@@ -6,6 +6,7 @@ import { services } from '@/lib/content/services';
 import { FaLocationArrow } from 'react-icons/fa6';
 import Link from 'next/link';
 import { aosConfig } from '@/styles/animation/anim';
+import { getId } from '@/utils/helper';
 const Services = () => {
   useEffect(() => {
     AOS.init();
@@ -18,10 +19,10 @@ const Services = () => {
       </div>
 
       <section className='grid lg:grid-cols-2  place-items-center mt-12 sm:mt-16 gap-y-8 small:gap-y-10 desktop:gap-10 overflow-hidden'>
-        {services.map((items, idx: number) => (
+        {services.map((items) => (
           <div
             {...aosConfig}
-            key={idx}
+            key={getId()}
             style={{ backgroundColor: items.bg }}
             className={`w-72 xs:w-80 small:w-[23rem] sm:w-[27rem] xl:w-[32rem] desktop:w-[35rem] largesceen:w-[37.5rem]  sm:h-[14rem] xl:h-[18.125rem] flex justify-between items-center border border-dark rounded-[1.5rem] xs:rounded-[2rem] small:rounded-[2.813rem] card-shadow p-5 xs:p-8 sm:p-8 desktop:p-10 max-lg:data-aos-fade-up small-screen-animation`}>
             <div className='flex flex-col justify-between gap-y-10 small:gap-y-16 '>

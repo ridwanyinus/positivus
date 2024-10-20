@@ -5,6 +5,7 @@ import { process } from '@/lib/content/process';
 import assets from '@/public/assets';
 import Image from 'next/image';
 import { aosConfig } from '@/styles/animation/anim';
+import { getId } from '@/utils/helper';
 const Process = () => {
   useEffect(() => {
     AOS.init();
@@ -17,10 +18,10 @@ const Process = () => {
       </div>
 
       <section className='mt-8 sm:mt-12 xl:mt-16 grid place-items-center gap-y-6 sm:gap-y-10'>
-        {process.map((items, idx: number) => (
+        {process.map((items) => (
           <div
             {...aosConfig}
-            key={idx}
+            key={getId()}
             className='bg-gray border border-dark card-shadow w-full small:w-[90%] 2xl:w-[80%] rounded-2xl sm:rounded-3xl 2xl:rounded-[2rem] min-h-20 px-4 sm:px-8 md:px-12 lg:px-20 py-4 sm:py-6 2xl:py-5 largesceen:py-8'>
             <details className='group [&_summary::-webkit-details-marker]:hidden '>
               <summary className='flex justify-between items-center'>

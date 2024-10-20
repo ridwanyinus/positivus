@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { navItems } from '@/lib/content/navbar';
 import Image from 'next/image';
 import assets from '@/public/assets';
+import { getId } from '@/utils/helper';
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -33,8 +34,8 @@ const Navbar = () => {
         </Link>
 
         <div className='flex space-x-8 xl:space-x-12 items-center max-lg:hidden'>
-          {navItems.map((items, idx: number) => (
-            <ul key={`link=${idx}`}>
+          {navItems.map((items) => (
+            <ul key={getId()}>
               <li>
                 <Link
                   href={items.link}
@@ -64,8 +65,8 @@ const Navbar = () => {
           {toggleMenu && (
             <div className='fixed top-0 right-0 w-[60%] sm:w-1/2 h-screen  overflow-hidden '>
               <div className='flex flex-col justify-start bg-green items-start w-full h-full pt-28 max-sm:pl-4  sm:px-12 md:px-20 transition-transform transform scale-up-hor-right'>
-                {navItems.map((item, idx) => (
-                  <ul key={idx} className='mb-4'>
+                {navItems.map((item) => (
+                  <ul key={getId()} className='mb-4'>
                     <li className='py-1'>
                       <Link href={item.link} className='text-2xl sm:text-3xl transition-all text-center text-white font-semibold'>
                         {item.name}
