@@ -7,27 +7,43 @@ import { navItems } from '@/lib/content/navbar';
 import Image from 'next/image';
 import assets from '@/public/assets';
 import { getId } from '@/utils/helper';
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [scroll, setScroll] = useState(false);
+
+  // New effect to prevent scrolling when mobile menu is open
+  useEffect(() => {
+    if (toggleMenu) {
+      // Disable scrolling on body when menu is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Restore scrolling when menu is closed
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cleanup function to ensure scrolling is restored
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [toggleMenu]); // Depend on toggleMenu state
 
   useEffect(() => {
     const handleScroll = () => {
       setScroll(window.scrollY > 50);
     };
-
     if (typeof window !== 'undefined') {
       window.addEventListener('scroll', handleScroll);
     }
-
     return () => {
       if (typeof window !== 'undefined') {
         window.removeEventListener('scroll', handleScroll);
       }
     };
   }, []);
+
   return (
-    <nav className={`pt-6 padding-x w-full relative  overflow-hidden`}>
+    <nav className={`pt-6 padding-x w-full relative overflow-hidden`}>
       <section className='flex justify-between items-center'>
         <Link href='/' className='relative z-[999]'>
           <Image src={assets.Logo} alt='logo' className='w-36 sm:w-44  largesceen:w-auto' />
@@ -68,7 +84,7 @@ const Navbar = () => {
                 {navItems.map((item) => (
                   <ul key={getId()} className='mb-4'>
                     <li className='py-1'>
-                      <Link href={item.link} className='text-2xl sm:text-3xl transition-all text-center text-white font-semibold'>
+                      <Link href={item.link} className='text-2xl sm:text-3xl transition-all text-center text-black font-semibold'>
                         {item.name}
                       </Link>
                     </li>
